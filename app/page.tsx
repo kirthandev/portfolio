@@ -1,113 +1,165 @@
+import { ModeToggle } from "@/components/Mode-Toggle";
 import Image from "next/image";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main>
+      <section className="md:px-20 lg:px-40">
+        <section className="min-h-screen ">
+          <nav className="py-4 pl-8 pr-8 mb-8 flex justify-between z-50">
+            <h1 className="text-xs font-bold text-center">KH</h1>
+
+            {/* <ul className='hidden md:flex items-center gap-10 text-sm font-semibold'>
+
+          {links.map(({id, link}) => (
+                <li key={id} className='cursor-pointer capitalize hover:scale-125 duration-300'>
+                   {link}
+                </li>
+          ))}
+        </ul> */}
+            <div className="flex justify-between items-center gap-4 cursor-pointer">
+              <ModeToggle />
+            </div>
+          </nav>
+
+          <div className="flex justify-center align-middle pt-2">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/avatar-5.png"
+              alt="Kirthan Hegde"
+              width={200}
+              height={200}
             />
-          </a>
-        </div>
-      </div>
+          </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <div className="text-center p-5 ">
+            <h2 className="text-4xl py-2 text-sky-600 font-bold">
+              Kirthan Hegde
+            </h2>
+            {/* <h3 className="text-2xl py-2 font-semibold">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Web Developer",
+                    "Web Designer",
+                    "Personal Trainer",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h3> */}
+            <p className="text-md py-4 leading-7 max-w-lg mx-auto">
+              Experienced freelance web developer and designer. Crafting
+              visually stunning websites that leave a lasting impression. Let's
+              bring your digital vision to life with creativity and technical
+              finesse. Join me below and let's begin our journey towards an
+              exceptional online presence.
+            </p>
+          </div>
+          {/* <div className="text-2xl flex justify-center gap-16 py-3 text-sky-800 dark:text-sky-200">
+            <a
+              href="https://www.linkedin.com/in/kirthan-hegde/"
+              target="_blank"
+            >
+              <BsLinkedin className=" cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
+            </a>
+            <a href="https://github.com/kirthandev/" target="_blank">
+              <BsGithub className="cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
+            </a>
+            <a href="mailto:kirthanhegde.dev@gmail.com" target="_blank">
+              <AiOutlineMail className="cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
+            </a>
+          </div> */}
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className=" flex w-full justify-center align-middle mt-3 text-3xl text-sky-400">
+            {/* <AiOutlineArrowDown />  */}
+            <Image
+              src={"/scroll.gif"}
+              width={35}
+              height={35}
+              className="pt-2 "
+            />
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          {/* <div className="w-full mb-auto my-12 pb-6">
+            <div className="max-w-full mx-auto flex flex-col justify-center align-middle text-center h-full">
+              <p className="text-base tracking-widest uppercase ">Skills</p>
+              <h2 className="p-1 text-2xl text-sky-600 font-bold">
+                What I Can Do
+              </h2>
+              <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 text-center pb-12 pt-4">
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/html.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">HTML</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/css.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">CSS</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/js.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">JavaScript</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/react.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">ReactJS</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/node.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">NodeJS</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/next.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">NextJS</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image
+                    src={"/tailwind.png"}
+                    width={85}
+                    height={85}
+                    alt="html"
+                  />
+                  <h3 className="font-bold text-sm ">Tailwind</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image
+                    src={"/bootstrap.png"}
+                    width={85}
+                    height={85}
+                    alt="html"
+                  />
+                  <h3 className="font-bold text-sm ">Bootstrap</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/mongo.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">MongoDB</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/git.png"} width={85} height={85} alt="Github" />
+                  <h3 className="font-bold text-sm ">GitHub</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image src={"/figma.png"} width={85} height={85} alt="html" />
+                  <h3 className="font-bold text-sm ">Figma</h3>
+                </div>
+                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
+                  <Image
+                    src={"/wordpress.png"}
+                    width={85}
+                    height={85}
+                    alt="wordpress"
+                  />
+                  <h3 className="font-bold text-sm ">Wordpress</h3>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          <Skills />
+        </section>
+      </section>
+      <Footer />
     </main>
   );
 }
