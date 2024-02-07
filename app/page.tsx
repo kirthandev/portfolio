@@ -2,6 +2,7 @@ import { ModeToggle } from "@/components/Mode-Toggle";
 import Image from "next/image";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -58,104 +59,31 @@ export default function Home() {
               exceptional online presence.
             </p>
           </div>
-          {/* <div className="text-2xl flex justify-center gap-16 py-3 text-sky-800 dark:text-sky-200">
+          <div className="text-2xl flex justify-center gap-16 py-3 text-sky-800 dark:text-sky-200">
             <a
               href="https://www.linkedin.com/in/kirthan-hegde/"
               target="_blank"
             >
-              <BsLinkedin className=" cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
+              <Linkedin className=" cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
             </a>
             <a href="https://github.com/kirthandev/" target="_blank">
-              <BsGithub className="cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
+              <Github className="cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
             </a>
             <a href="mailto:kirthanhegde.dev@gmail.com" target="_blank">
-              <AiOutlineMail className="cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
+              <Mail className="cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
             </a>
-          </div> */}
+          </div>
 
           <div className=" flex w-full justify-center align-middle mt-3 text-3xl text-sky-400">
             {/* <AiOutlineArrowDown />  */}
             <Image
-              src={"/scroll.gif"}
-              width={35}
-              height={35}
-              className="pt-2 "
+              src="/scroll.gif"
+              width={45}
+              height={45}
+              className="pt-2"
+              alt="Scroll img"
             />
           </div>
-
-          {/* <div className="w-full mb-auto my-12 pb-6">
-            <div className="max-w-full mx-auto flex flex-col justify-center align-middle text-center h-full">
-              <p className="text-base tracking-widest uppercase ">Skills</p>
-              <h2 className="p-1 text-2xl text-sky-600 font-bold">
-                What I Can Do
-              </h2>
-              <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 text-center pb-12 pt-4">
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/html.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">HTML</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/css.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">CSS</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/js.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">JavaScript</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/react.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">ReactJS</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/node.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">NodeJS</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/next.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">NextJS</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image
-                    src={"/tailwind.png"}
-                    width={85}
-                    height={85}
-                    alt="html"
-                  />
-                  <h3 className="font-bold text-sm ">Tailwind</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image
-                    src={"/bootstrap.png"}
-                    width={85}
-                    height={85}
-                    alt="html"
-                  />
-                  <h3 className="font-bold text-sm ">Bootstrap</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/mongo.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">MongoDB</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/git.png"} width={85} height={85} alt="Github" />
-                  <h3 className="font-bold text-sm ">GitHub</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image src={"/figma.png"} width={85} height={85} alt="html" />
-                  <h3 className="font-bold text-sm ">Figma</h3>
-                </div>
-                <div className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg p-2 ">
-                  <Image
-                    src={"/wordpress.png"}
-                    width={85}
-                    height={85}
-                    alt="wordpress"
-                  />
-                  <h3 className="font-bold text-sm ">Wordpress</h3>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <Skills />
         </section>
       </section>
