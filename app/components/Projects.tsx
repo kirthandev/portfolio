@@ -33,7 +33,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="flex  flex-col justify-center align-middle">
+    <div className="flex  flex-col justify-center align-middle ">
       <div className="justify-center align-middle text-center">
         <p className="text-base tracking-widest uppercase ">Projects</p>
         <h2 className="p-1 text-3xl text-sky-600 font-bold">
@@ -43,7 +43,7 @@ const Projects = () => {
 
       {projects.map((project, index) => (
         <div key={index} className="flex justify-center align-middle m-4 ">
-          <div className="flex max-w-2xl flex-col items-center justify-center rounded-md border md:flex-row">
+          <div className="flex max-w-2xl flex-col items-center justify-center rounded-md border md:flex-row shadow-md dark:shadow-cyan-700">
             <div className="h-full w-full md:h-[200px] md:w-[300px]">
               <Image
                 src={project.image}
