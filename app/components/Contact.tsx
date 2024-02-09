@@ -13,7 +13,7 @@ export function Contact() {
             <div className="flex items-center justify-center align-middle">
               <div className="px-2 md:px-12">
                 <p className="text-4xl font-bold text-center text-sky-600">
-                  Contact Us
+                  Contact me
                 </p>
 
                 <form
