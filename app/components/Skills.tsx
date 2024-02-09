@@ -22,13 +22,13 @@ const Skills = () => {
       <div className="max-w-full mx-auto flex flex-col justify-center align-middle text-center h-full">
         <p className="text-base tracking-widest uppercase ">Skills</p>
         <h2 className="p-1 text-3xl text-sky-600 font-bold">What I Can Do</h2>
-        <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-6 text-center pb-16 pt-4">
+        <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-8 text-center pb-16 pt-4">
           {skillsData.map((skill, index) => (
             <div
               key={index}
-              className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg dark:shadow-md dark:shadow-cyan-800 p-2"
+              className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg dark:shadow-md dark:shadow-cyan-800 "
             >
-              <Image src={skill.src} width={100} height={100} alt={skill.alt} />
+              <Image src={skill.src} width={90} height={90} alt={skill.alt} />
               <h3 className="font-bold text-sm ">{skill.text}</h3>
             </div>
           ))}
