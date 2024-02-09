@@ -62,10 +62,7 @@ export default function Home() {
             </p>
           </div>
           <div className="text-2xl flex justify-center gap-16 py-3 text-sky-800 dark:text-sky-200">
-            <a
-              href="https://www.linkedin.com/in/kirthan-hegde/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/kirthanhegde" target="_blank">
               <Linkedin className=" cursor-pointer hover:text-orange-400 dark:hover:text-sky-600" />
             </a>
             <a href="https://github.com/kirthandev/" target="_blank">
