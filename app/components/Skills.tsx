@@ -21,7 +21,7 @@ const Skills = () => {
     <div className="w-full mb-auto my-12 pb-6">
       <div className="max-w-full mx-auto flex flex-col justify-center align-middle text-center h-full">
         <p className="text-base tracking-widest uppercase ">Skills</p>
-        <h2 className="p-1 text-2xl text-sky-600 font-bold">What I Can Do</h2>
+        <h2 className="p-1 text-3xl text-sky-600 font-bold">What I Can Do</h2>
         <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 text-center pb-12 pt-4">
           {skillsData.map((skill, index) => (
             <div

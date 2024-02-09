@@ -3,6 +3,8 @@ import Image from "next/image";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Projects from "./components/Projects";
+import { Contact } from "./components/Contact";
 
 export default function Home() {
   return (
@@ -85,6 +87,8 @@ export default function Home() {
             />
           </div>
           <Skills />
+          <Projects />
+          <Contact />
         </section>
       </section>
       <Footer />
