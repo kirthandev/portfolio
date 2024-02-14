@@ -8,12 +8,12 @@ const skillsData = [
   { src: "/react.png", alt: "ReactJS", text: "ReactJS" },
   { src: "/next.png", alt: "NextJS", text: "NextJS" },
   { src: "/node.png", alt: "NodeJS", text: "NodeJS" },
-  { src: "/tailwind.png", alt: "Tailwind", text: "Tailwind" },
-  { src: "/bootstrap.png", alt: "Bootstrap", text: "Bootstrap" },
   { src: "/mongo.png", alt: "MongoDB", text: "MongoDB" },
+  { src: "/tailwind.png", alt: "Tailwind", text: "Tailwind" },
+  { src: "/mui.png", alt: "mui", text: "MUI" },
+  { src: "/bootstrap.png", alt: "Bootstrap", text: "Bootstrap" },
   { src: "/git.png", alt: "GitHub", text: "GitHub" },
   { src: "/figma.png", alt: "Figma", text: "Figma" },
-  { src: "/mui.png", alt: "mui", text: "MUI" },
 ];
 
 const Skills = () => {
