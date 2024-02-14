@@ -11,9 +11,9 @@ const skillsData = [
   { src: "/tailwind.png", alt: "Tailwind", text: "Tailwind" },
   { src: "/bootstrap.png", alt: "Bootstrap", text: "Bootstrap" },
   { src: "/mongo.png", alt: "MongoDB", text: "MongoDB" },
-  { src: "/github.png", alt: "GitHub", text: "GitHub" },
+  { src: "/git.png", alt: "GitHub", text: "GitHub" },
   { src: "/figma.png", alt: "Figma", text: "Figma" },
-  { src: "/wordpress.png", alt: "WordPress", text: "WordPress" },
+  { src: "/mui.png", alt: "mui", text: "MUI" },
 ];
 
 const Skills = () => {
@@ -28,7 +28,7 @@ const Skills = () => {
               key={index}
               className="mx-auto w-auto justify-center align-middle text-center rounded-xl shadow-lg dark:shadow-md dark:shadow-cyan-800 "
             >
-              <Image src={skill.src} width={90} height={90} alt={skill.alt} />
+              <Image src={skill.src} width={120} height={120} alt={skill.alt} />
               <h3 className="font-bold text-sm ">{skill.text}</h3>
             </div>
           ))}
